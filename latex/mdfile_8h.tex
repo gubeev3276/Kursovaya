@@ -1,0 +1,104 @@
+\hypertarget{mdfile_8h}{}\doxysection{Файл mdfile.\+h}
+\label{mdfile_8h}\index{mdfile.h@{mdfile.h}}
+
+
+Описание класса \mbox{\hyperlink{classServer}{Server}}.  
+
+
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cryptopp/cryptlib.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/hex.\+h$>$}\newline
+{\ttfamily \#include $<$cryptopp/md5.\+h$>$}\newline
+Граф включаемых заголовочных файлов для mdfile.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mdfile_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{mdfile_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classerror__server}{error\+\_\+server}}
+\begin{DoxyCompactList}\small\item\em Класс для обработки ошибок возникающих при работе сервера \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classServer}{Server}}
+\begin{DoxyCompactList}\small\item\em Класс в котором находятся переменные и функция для подключения сервера к клиенту \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classauth}{auth}}
+\begin{DoxyCompactList}\small\item\em Класс в котором находятся переменные и функция для авторизации \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mdfile_8h_a60054cd46e0dc2ed04249519a5291cda}\label{mdfile_8h_a60054cd46e0dc2ed04249519a5291cda}} 
+\#define {\bfseries CRYPTOPP\+\_\+\+ENABLE\+\_\+\+NAMESPACE\+\_\+\+WEAK}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{mdfile_8h_aca36b4f222e88d8334a40aba414f7e39}\label{mdfile_8h_aca36b4f222e88d8334a40aba414f7e39}} 
+std\+::string {\bfseries MD} (std\+::string sah)
+\item 
+\mbox{\Hypertarget{mdfile_8h_aabd1b8a4be8092052914e8911cc38c3d}\label{mdfile_8h_aabd1b8a4be8092052914e8911cc38c3d}} 
+void {\bfseries errors} (string error, string file\+\_\+name, string file\+\_\+error)
+\item 
+\mbox{\Hypertarget{mdfile_8h_a2261239a94510c87c11a323b7aab50f9}\label{mdfile_8h_a2261239a94510c87c11a323b7aab50f9}} 
+void \mbox{\hyperlink{mdfile_8h_a2261239a94510c87c11a323b7aab50f9}{msgsend}} (int work\+\_\+sock, string mess)
+\begin{DoxyCompactList}\small\item\em Функция для отправки сообщения \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{mdfile_8h_a2fe5e3dce11e43d39e3ff32f24c61e55}\label{mdfile_8h_a2fe5e3dce11e43d39e3ff32f24c61e55}} 
+int {\bfseries autorized} (int work\+\_\+sock, string file\+\_\+name, string file\+\_\+error)
+\item 
+\mbox{\Hypertarget{mdfile_8h_a87fd77323b4c3ee742811a2b6b76dfa5}\label{mdfile_8h_a87fd77323b4c3ee742811a2b6b76dfa5}} 
+int \mbox{\hyperlink{mdfile_8h_a87fd77323b4c3ee742811a2b6b76dfa5}{math}} (int work\+\_\+sock)
+\begin{DoxyCompactList}\small\item\em Математическая функция \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Описание класса \mbox{\hyperlink{classServer}{Server}}. 
+
+Описание классов, подключение библиотек и переменных
+
+\begin{DoxyAuthor}{Автор}
+Губеев Е.\+Д. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+16.\+22.\+2023. 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ
+\end{DoxyCopyright}
+\begin{DoxyAuthor}{Автор}
+Губеев Е.\+Д. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+16.\+12.\+2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ 
+\end{DoxyCopyright}
